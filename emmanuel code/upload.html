@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="upload-styles.css"> <!-- Link to your additional CSS file -->
+    <title>Upload Video - Your Video Sharing Website</title>
+</head>
+<body>
+    <header>
+        <nav> <ul>
+            <li><a href="screenscape.html"> <h1> screenscape </h1></a></li>
+        </ul></nav>
+        <h1></h1>
+        <nav>
+           
+        </nav>
+    </header>
+    
+    <main class="main-content">
+        <section class="video-upload">
+            <h2>Upload a Video</h2>
+            <form action="upload.php" method="post" enctype="multipart/form-data">
+                <label for="videoTitle">Video Title:</label>
+                <input type="text" id="videoTitle" name="videoTitle" required><br>
+                
+                <label for="videoDescription">Video Description:</label>
+                <textarea id="videoDescription" name="videoDescription" required></textarea><br>
+                
+                <label for="videoFile">Select a video file:</label>
+                <input type="file" id="videoFile" name="videoFile" accept="video/*" required><br>
+                
+                <button type="submit">Upload</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 screenscape</p>
+    </footer>
+</body>
+</html>
