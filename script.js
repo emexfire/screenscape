@@ -25,3 +25,4 @@ document.getElementById('registration-form').addEventListener('submit', async fu
     }
   });
   
+ 
